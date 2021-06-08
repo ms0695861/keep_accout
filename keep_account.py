@@ -11,7 +11,6 @@ if os.path.isfile('products.csv'): #check the file is exist or not
 				continue
 			name, price = line.strip().split(',') #remove '\n' and split ','
 			products.append([name, price])
-			print(products)
 else:
 	print("Can't not find file")
 
